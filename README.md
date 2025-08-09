@@ -1,0 +1,1 @@
+A simple Discord bot to retrieve direct video URLs on various sites using yt-dlp.
