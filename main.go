@@ -42,6 +42,9 @@ func getLinks(link string) (string, error) {
 		return "", err
 	}
 	go func() {
+		cmd.Wait()
+	}()
+	go func() {
 		r, err := io.ReadAll(stderr)
 		if err != nil {
 			result <- err.Error()
